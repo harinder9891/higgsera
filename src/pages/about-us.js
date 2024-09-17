@@ -77,7 +77,7 @@ function About(){
                         <li class="text"><i class="circle fa-duotone fa-check"></i>Duis aute irure dolor in reprehenderit in voluptatar.</li>
                         <li class="text text1"><i class="circle fa-duotone fa-check"></i>Molestiae non recusandae itarue earum rerum ma.</li>
                     </ul>
-                    <a class="get_started text-white text-decoration-none" href="about.html">Get Started
+                    <a class="get_started text-white text-decoration-none" href="/about-us">Get Started
                         <figure class="mb-0"><img src="assets/images/button-arrow.png" alt="" class="img-fluid"/></figure>
                     </a>
                 </div>
@@ -196,9 +196,9 @@ function About(){
                                     <h4>David Bell</h4>
                                     <span class="text-size-18">Marketer</span>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li class="icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>   
@@ -212,9 +212,9 @@ function About(){
                                     <h4>Kevin Woods</h4>
                                     <span class="text-size-18">Developer</span>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li class="icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -231,9 +231,9 @@ function About(){
                                         <h4>Georgia James</h4>
                                         <span class="text-size-18">Developer</span>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li class="icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-twitter"></i></a></li>
+                                            <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-instagram"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -247,9 +247,9 @@ function About(){
                                         <h4>Alina James</h4>
                                         <span class="text-size-18">Designer</span>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li class="icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-twitter"></i></a></li>
+                                            <li class="icons"><a href="https://facebook.com/higgsera"><i class="fa-brands fa-instagram"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
