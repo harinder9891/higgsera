@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap');
 
 :root {
-    --e-global-color-primary: #202020;
+    --e-global-color-primary: #40589ed9;
     --e-global-color-secondary: #0097b2;
     --e-global-color-text: #656565;
     --e-global-color-accent: #0097b2;
     --e-global-color-white: #ffffff;
     --e-global-color-light-white:#d6d8e2;
-    --e-global-color-very-dark-mostly-black-blue:#40589e;
+    --e-global-color-very-dark-mostly-black-blue:#40589ed9;
     --e-button-gradient-1:#0097b2;
     --e-button-gradient-2:#0097b2;
-    --e-global-color-desaturated-blue:#353956;
+    --e-global-color-desaturated-blue:#40589ed9;
     --e-global-color-bright-orange:#0097b2; 
     --e-global-color-very-pale-orange:#fff7f4;
     --e-global-color-very-light-gray-mostly-white:#f9f9f9;
@@ -32,7 +32,7 @@ body{
     line-height: 54px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--e-global-color-primary);
+    color: var(--e-global-color-very-dark-mostly-black-blue);
 }
 .h3, h3{
     font-size: 30px;
@@ -100,14 +100,14 @@ p {
 }
 .banner_outer::after{
     content: "";
-    background-image: url('../images/banner-background.jpg');
+    background-image: url('https://www.hanovatech.de/content/services/managed-services.jpeg');
     border-radius: 0 0 600px 0;
     width: 65%;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 15%;
+    opacity: 19%;
 }
 .banner_outer .header {
     padding: 0 252px;
@@ -498,7 +498,7 @@ p {
     text-align: left;
 }
 .service-section .service_content .text {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
     font-weight: 500;
     text-align: left;
@@ -2808,3 +2808,4 @@ p {
 /* .single-post .single-post-heading {
     font-size: 30px !important;
 } */
+

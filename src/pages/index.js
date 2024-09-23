@@ -20,17 +20,17 @@ function Index(){
                 <div className="col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-right">
                     <div className="social-icons position-relative" data-aos="fade-up">
                         <ul className="list-unstyled position-absolute">
-                            <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-facebook-f social-networks"></i></a></li>
+                            <li><a href="https://www.facebook.com/higgsera" className="text-decoration-none"><i className="fa-brands fa-facebook-f social-networks"></i></a></li>
                             <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-twitter social-networks"></i></a></li>
                             <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-google-plus-g social-networks"></i></a></li>
-                                <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-instagram social-networks"></i></a></li>
+                                <li><a href="https://www.instagram.com/higgsera/" className="text-decoration-none"><i className="fa-brands fa-instagram social-networks"></i></a></li>
                         </ul>
                     </div>
                     <div className="banner_content">
                         <figure className="banner-line mb-0"><img src="assets/images/banner-line.png" alt="" className="img-fluid"/></figure>
-                        <h6 className="text-white">WE PROVIDE OUTSOURCED</h6>
-                        <h1 className="text-white">IT Services & Solutions</h1>
-                        <p>Doidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                        <h6 className="text-white">TRANSFORMING YOUR APPROACH </h6>
+                        <h1 className="text-white">Innovation at the core</h1>
+                        <p>Empowering businesses to lead through technologies, transforming ideas into ground breaking solutions that shape tomorrow.</p>
                         <a className="get_started button1 text-white text-decoration-none" href="contact.html">Get Started
                             <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                         </a>
@@ -48,7 +48,7 @@ function Index(){
                 <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                     <div className="banner_wrapper">
                         <figure className="mb-0 banner-image">
-                            <img src="assets/images/banner-image.jpg" alt="" className="img-fluid"/>
+                            <img src="assets/images/banner-image.png" alt="" className="img-fluid"/>
                         </figure>
                         <div className="position-relative">
                             <a className="popup-vimeo" href="https://video-previews.elements.envatousercontent.com/h264-video-previews/d1c81f1e-849f-4d45-ae57-b61c2f5db34a/25628048.mp4">
@@ -92,7 +92,7 @@ function Index(){
                                     <img src="assets/images/service-marketicon.png" alt="" className="img-fluid"/>
                                 </figure> 
                                 <h4>Digital Marketing</h4>
-                                <p className="text-size-18">Nostrum exercitationem ae ullam corporis suscipit labo riosam aliruiea.</p>
+                                <p className="text-size-18">Grow your brand presence online with targeted strategies that connect with your audience.</p>
                                 <a className="arrow text-decoration-none" href="service.html"><i className="circle fa-thin fa-arrow-right"></i></a>
                             </div>   
                         </div>
@@ -102,8 +102,8 @@ function Index(){
                                     <figure className="service-producticon">
                                         <img src="assets/images/service-producticon.png" alt="" className="img-fluid"/>
                                     </figure>
-                                    <h4>Product Development</h4>
-                                    <p className="text-size-18">Nostrum exercitationem ae ullam corporis suscipit labo riosam aliruiea.</p>
+                                    <h4>App Development</h4>
+                                    <p className="text-size-18">Custom app solutions that bring your ideas to life and streamline your business operations.</p>
                                     <a className="arrow text-decoration-none" href="service.html"><i className="circle fa-thin fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ function Index(){
                                     <img src="assets/images/service-designicon.png" alt="" className="img-fluid"/>
                                 </figure>
                                 <h4>Ui/Ux Designing</h4>
-                                <p className="text-size-18">Nostrum exercitationem ae ullam corporis suscipit labo riosam aliruiea.</p>
+                                <p className="text-size-18">Stunning visuals and creative designs that leave a lasting impression.</p>
                                 <a className="arrow text-decoration-none" href="service.html"><i className="circle fa-thin fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -126,8 +126,8 @@ function Index(){
                                     <figure className="service-dataicon">
                                         <img src="assets/images/service-dataicon.png" alt="" className="img-fluid"/>
                                     </figure>
-                                    <h4>Data Analysis</h4>
-                                    <p className="text-size-18">Nostrum exercitationem ae ullam corporis suscipit labo riosam aliruiea.</p>
+                                    <h4>Web Development</h4>
+                                    <p className="text-size-18">From concept to creation, we build websites that are both functional and aesthetically pleasing.</p>
                                     <a className="arrow text-decoration-none" href="service.html"><i className="circle fa-thin fa-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -142,13 +142,13 @@ function Index(){
                     </figure>
                     <h6>Our Services</h6>
                     <h2>BEST IT SOLUTION FOR YOUR BUSINESS</h2>
-                    <p>Grursus mal suada faci lisis lorem ipsum dolarorit more ame
-                        ion consectetur elit vesti at bulum nec odio aea the dumm ipsumm recreo that dolocons.</p>
+                    <p>At HIGGSERA, we offer a full range of services designed to elevate your business in the digital space. From marketing to development,
+                         we provide solutions that help you connect, grow, and succeed.</p>
                     <ul className="list-unstyled mb-0">
-                        <li className="text"><i className="circle fa-duotone fa-check"></i>Quisquam est, rui dolorem ipsum quia dolor corporis.</li>
-                        <li className="text"><i className="circle fa-duotone fa-check"></i>Rem aperiam, eaque ipsa quae ab illo inventore veritatis.</li>
-                        <li className="text"><i className="circle fa-duotone fa-check"></i>Duis aute irure dolor in reprehenderit in voluptate velio.</li>
-                        <li className="text text1"><i className="circle fa-duotone fa-check"></i>Molestiae non recusandae itarue earum rerum maio.</li>
+                        <li className="text"><i className="circle fa-duotone fa-check"></i>Strategies that drive engagement and fuel business growth.</li>
+                        <li className="text"><i className="circle fa-duotone fa-check"></i>Dynamic, user-friendly websites that reflect your brand identity.</li>
+                        <li className="text"><i className="circle fa-duotone fa-check"></i>Innovative mobile solutions that enhance user experiences.</li>
+                        <li className="text text1"><i className="circle fa-duotone fa-check"></i>Stunning visuals that capture your brand's essence.</li>
                     </ul>
                     <a className="get_started text-white text-decoration-none" href="service.html">Get Started
                         <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
@@ -171,7 +171,7 @@ function Index(){
                 <div className="offer_content" data-aos="fade-up">
                     <h6>what We Offer</h6>
                     <h2>Why You Should Choose Us</h2>
-                    <p>Grursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec odio aea the dumm recreo that dolocons.</p>
+                    <p>Our commitment to innovation ensures that we stay ahead of industry trends, providing cutting-edge solutions tailored to your unique needs.</p>
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@ function Index(){
             <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 article_padding">
                 <div className="offer_boxcontent">
                     <div className="upper_portion">
-                        <figure className="mb-0"><img src="assets/images/offer-image1.jpg" className="article_img" alt=""/></figure>
+                        <figure className="mb-0"><img src="assets/images/offer-image1.png" className="article_img" alt=""/></figure>
                         <div className="image_content">
                             <figure className="offer-icon">
                                 <img src="assets/images/offer-icon1.png" alt="" className="img-fluid"/>
@@ -216,7 +216,7 @@ function Index(){
             <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 article_padding">
                 <div className="offer_boxcontent mb-0">
                     <div className="upper_portion">
-                        <figure className="mb-0"><img src="assets/images/offer-image3.jpg" className="article_img" alt=""/></figure>
+                        <figure className="mb-0"><img src="assets/images/offer-image3.png" className="article_img" alt=""/></figure>
                         <div className="image_content">
                             <figure className="offer-icon">
                                 <img src="assets/images/offer-icon3.png" alt="" className="img-fluid"/>
@@ -272,8 +272,8 @@ function Index(){
                 <div className="about_content" data-aos="fade-right">
                     <h6>About us</h6>
                     <h2 className="text-white">We help clients invent their future.</h2>
-                    <p className="text1">Grursus mal suada faci lisis lorem ipsum dolarorit more ae ion consectetur elit vesti at bulum nec odio aea the dumo ipsumm recreo that dolocons.</p>
-                    <p className="text2">Exercitationem ullam corporis suscipit laboriosam, nisi auali quid exear commodi consequatur.</p>
+                    <p className="text1">We help clients shape their future with innovative solutions. Our expertise in digital marketing, web and app development, and graphic design enables businesses to embrace new technologies. </p>
+                    <p className="text2">By partnering closely with our clients, we create tailored strategies that boost their online presence and unlock new opportunities for success.</p>
                     <a className="read_more text-white text-decoration-none" href="about.html">Read More
                         <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                     </a>

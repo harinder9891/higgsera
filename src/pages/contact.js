@@ -68,10 +68,10 @@ function Contact(){
                         <div class="box-content">
                             <h4 class="heading">Email:</h4>
                             <p>
-                                <a href="mailto:info@artelligence.com" class="text-decoration-none">support@technofy.com</a>
+                                <a href="mailto:info@higgsera.com" class="text-decoration-none">info@higgsera.com</a>
                             </p>
                             <p>
-                                <a href="mailto:artelligence@gmail.com" class="mb-0 text-decoration-none">technofy@gmail.com</a>
+                                <a href="mailto:business@higgsera.com" class="mb-0 text-decoration-none">business@higgsera.com</a>
                             </p>
                         </div>
                     </div>
@@ -84,10 +84,10 @@ function Contact(){
                         <div class="box-content">
                             <h4 class="heading">Phone:</h4>
                             <p>
-                                <a href="tel:+012(345)67899" class="text-decoration-none text">+012 (345) 678 99</a>                                
+                                <a class="text-decoration-none text" href="tel:+919056503603">+91 9056-503-603</a>                             
                             </p>
                             <p>
-                                <a href="tel:+1234567847858" class="mb-0 text-decoration-none text">+12345678 478 58</a>
+                                <a class="mb-0 text-decoration-none text" href="tel:+919056503603">+91 9736-881-788</a>
                             </p>
                         </div>
                     </div>

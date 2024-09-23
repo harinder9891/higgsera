@@ -6,7 +6,7 @@ function Footer(){
             <section className="footer-section">
     <div className="container">
         <figure className="footer-leftimage mb-0">
-            <img src="assets/images/footer-leftimage.png" alt="" className="img-fluid"/>
+            <img src="assets/images/service-consultationleftimage.png" alt="" className="img-fluid"/>
         </figure>
         <figure className="mb-0 about-leftcircle">
             <img src="assets/images/about-rightcircle.png" alt="" className="img-fluid"/>
@@ -25,11 +25,11 @@ function Footer(){
                         <div className="lower">
                             <div className="lower-content">
                                 <figure className="icon">
-                                    <img src="assets/images/footer-callicon.png" alt="" className="img-fluid"/>
+                                    <img src="assets/images/nav-phoneimage.png" alt="" className="img-fluid"/>
                                 </figure>
                                 <div className="content">
                                     <span className="text-white">Call us:</span>
-                                    <a className="text-size-18 mb-0 text text-decoration-none" href="tel:+6138376284">+61 3 837 6284</a>
+                                    <a className="text-size-18 mb-0 text text-decoration-none" href="tel:+919056503603">+91 9056-503-603</a>
                                 </div>
                             </div>
                             <div className="lower-content">
@@ -38,7 +38,7 @@ function Footer(){
                                 </figure>
                                 <div className="content">
                                     <span className="text-white">Email us:</span>
-                                    <a href="mailto:info@technofy.com" className="text-size-18 mb-0 text-decoration-none">info@technofy.com</a>
+                                    <a href="mailto:business@higgsera.com" className="text-size-18 mb-0 text-decoration-none">business@higgsera.com</a>
                                 </div>
                             </div>
                         </div>
@@ -86,15 +86,15 @@ function Footer(){
             <div className="container">
                 <div className="row copyright-border">
                     <div className="col-lg-6 col-md-6 col-sm-12 co-12 column">
-                        <p className="text-size-16">Copyright ©2023 Technofy.com All Rights Reserved</p>
+                        <p className="text-size-16">Copyright ©2023 higgsera.com All Rights Reserved</p>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 co-12 d-md-block d-none">
                         <div className="social-icons position-relative">
                             <ul className="list-unstyled position-absolute">
-                                <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-facebook-f social-networks"></i></a></li>
+                                <li><a href="https://www.facebook.com/higgsera" className="text-decoration-none"><i className="fa-brands fa-facebook-f social-networks"></i></a></li>
                                 <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-twitter social-networks"></i></a></li>
                                 <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-google-plus-g social-networks"></i></a></li>
-                                <li><a href="#" className="text-decoration-none"><i className="fa-brands fa-instagram social-networks"></i></a></li>
+                                <li><a href="https://www.instagram.com/higgsera/" className="text-decoration-none"><i className="fa-brands fa-instagram social-networks"></i></a></li>
                             </ul>
                         </div>
                     </div>
