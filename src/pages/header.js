@@ -1,7 +1,20 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import { Link } from 'react-router-dom';
 
 function Header(){
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Initial state is closed
+    const [IsNavBarOpen, setIsNavBarOpen] = useState(false); // Initial state is closed
+
+    const toggleDropdown = (e) => {
+      e.preventDefault(); // Prevent page scroll or refresh on clicking the anchor tag
+      setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
+    };
+
+    const toggleNavBar = (e) => {
+      e.preventDefault(); // Prevent page scroll or refresh on clicking the anchor tag
+      setIsNavBarOpen(!IsNavBarOpen); // Toggle dropdown visibility
+    };
+  
     return(
         <Fragment>
  <header className="header">
@@ -10,63 +23,64 @@ function Header(){
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="/"><figure className="mb-0 banner-logo">
                         <img src="assets/images/logo-1.png" alt="" className="img-fluid"/></figure></a>
-                    <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                    <button className={`navbar-toggler ${IsNavBarOpen ? '' : 'collapsed'}`} type="button" data-toggle="collapse" onClick={toggleNavBar} data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={IsNavBarOpen ? "false" : "true"} 
                     aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     <span className="navbar-toggler-icon"></span>
                     <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className={`collapse navbar-collapse ${IsNavBarOpen ? 'show' : ''}`} id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/">Home</Link>
+                                <Link className="nav-link " to="/">Home</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/about-us">About</Link>
                             </li>
-	<li className="nav-space nav-item dropdown">
-    <a className="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<li className={`nav-space nav-item dropdown ${isDropdownOpen ? 'show' : ''}`}>
+    <a className="nav-link dropdown-toggle dropdown-color navbar-text-color" href="javascript:void(0);" onClick={toggleDropdown} id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" 
+        aria-expanded={isDropdownOpen ? "true" : "false"}>
         Services
     </a>
-    <div className="dropdown-menu drop-down-content service-menu">
+    <div className={`dropdown-menu drop-down-content service-menu ${isDropdownOpen ? 'show' : ''}`}>
         <div className="container">
             <div className="row">
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-laptop-code"></i> Web Development</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Custom Website Development</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">E-commerce Development</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">CMS (WordPress, Joomla)</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Web Application Development</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Landing Page Design</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/web-development">Custom Website Development</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/web-development">E-commerce Development</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/web-development">Content Management System</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/web-development">Web Application Development</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/web-development">Landing Page Design</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-cogs"></i> Software Development</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Custom Software Solutions</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">SaaS Development</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Enterprise Applications</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">API Development and Integration</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/software-development">Custom Software Solutions</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/software-development">SaaS Development</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/software-development">Enterprise Applications</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/software-development">API Development and Integration</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-bullhorn"></i> Digital Marketing</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">SEO</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Social Media Marketing</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">PPC Advertising</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Content Marketing</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Email Marketing</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/digital-marketing">SEO</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/digital-marketing">Social Media Marketing</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/digital-marketing">PPC Advertising</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/digital-marketing">Content Marketing</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/digital-marketing">Email Marketing</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-briefcase"></i> IT Consulting</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Business Process Automation</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">IT Strategy and Planning</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">System Integration</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Digital Transformation Consulting</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/it-consulting">Business Process Automation</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/it-consulting">IT Strategy and Planning</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/it-consulting">System Integration</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/it-consulting">Digital Transformation Consulting</Link></li>
                     </ul>
                 </div>
             </div>
@@ -74,37 +88,37 @@ function Header(){
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-mobile-alt"></i> Mobile App Development</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Web and Mobile App Design</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Native App Development</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Cross-Platform App Development</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">App Maintenance and Support</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/app-development">Web and Mobile App Design</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/app-development">Native App Development</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/app-development">Cross-Platform App Development</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/app-development">App Maintenance and Support</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-3">
-                    <ul className="list-unstyled drop-down-pages">
-                        <li className="dropdown-header"><i className="fas fa-cloud"></i> Cloud Services</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Cloud Infrastructure Setup</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Cloud Migration</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">DevOps Services</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Cloud Security Solutions</a></li>
-                    </ul>
+                <ul className="list-unstyled drop-down-pages">
+                    <li className="dropdown-header"><i className="fas fa-paint-brush"></i> UI/UX Designing</li>
+                    <li className="nav-item"><Link className="dropdown-item nav-link" to="/ui-ux-design">UI Design</Link></li>
+                    <li className="nav-item"><Link className="dropdown-item nav-link" to="/ui-ux-design">UX Research</Link></li>
+                    <li className="nav-item"><Link className="dropdown-item nav-link" to="/ui-ux-design">Prototyping</Link></li>
+                    <li className="nav-item"><Link className="dropdown-item nav-link" to="/ui-ux-design">User Testing</Link></li>
+                </ul>
                 </div>
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-shopping-cart"></i> E-commerce Solutions</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">E-commerce Platform </a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Payment Gateway Integration</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Inventory Management Systems</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Marketplace Development</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/e-commerce-development">E-commerce Platform </Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/e-commerce-development">Payment Gateway Integration</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/e-commerce-development">Inventory Management Systems</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/e-commerce-development">Marketplace Development</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-3">
                     <ul className="list-unstyled drop-down-pages">
                         <li className="dropdown-header"><i className="fas fa-tools"></i> Maintenance and Support</li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Website Maintenance</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">App Support and Upgrades</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Performance Optimization</a></li>
-                        <li className="nav-item"><a className="dropdown-item nav-link" href="#">Security Updates and Patches</a></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/maintenance-and-support">Website Maintenance</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/maintenance-and-support">App Support and Upgrades</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/maintenance-and-support">Performance Optimization</Link></li>
+                        <li className="nav-item"><Link className="dropdown-item nav-link" to="/maintenance-and-support">Security Updates and Patches</Link></li>
                     </ul>
                 </div>
             </div>

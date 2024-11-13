@@ -1,11 +1,16 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import Header from './header';
 import Footer from './footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Portfolio(){
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return(
         <Fragment>
           
-<div class="sub-banner sub-banner2">
+<div class="sub-banner">
     <figure class="sub-bannerleftlayer mb-0">
         <img src="assets/images/sub-bannerleftlayer.png" alt="" class="img-fluid"/>
     </figure>
@@ -19,7 +24,7 @@ function Portfolio(){
                             <img src="assets/images/service-rightcircle.png" alt="" class="img-fluid"/>
                         </figure>
                         <h1 class="text-white">Our Portfolio</h1>
-                        <p>Roidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                        <p>Discover Higgsera's portfolio, showcasing our innovative marketing, design, and development solutions that elevate brands and deliver results.</p>
                         <div class="box">
                             <span class="mb-0">Home</span>
                             <figure class="mb-0 arrow"><img src="assets/images/button-arrow.png" alt="" class="img-fluid"/></figure>
@@ -47,8 +52,8 @@ function Portfolio(){
                 <div class="project_content" data-aos="fade-right">
                     <h6>RECENT Portfolio</h6>
                     <h2>Our Latest Case Studies</h2>
-                    <p>Dursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec
-                        odio aea the dumm recreo that dolocons.</p>
+                    <p>Explore our latest case studies showcasing innovative solutions that transformed client challenges into successes.
+                    </p>
                     <figure class="offer-circleimage mb-0">
                         <img src="assets/images/offer-circleimage.png" alt="" class="img-fluid"/>
                     </figure>
@@ -171,8 +176,7 @@ function Portfolio(){
                     </figure>
                     <h6>Achievements</h6>
                     <h2>Some Number of Our Achievements</h2>
-                    <p>Grursus mal suada faci lisis lorem ipsum dolarorit more
-                        ion consectetur elit vesti at bulum nec odio aea the au ipsumm recreo that dolocons.</p>
+                    <p>We’ve propelled brands to new heights through innovative digital solutions, consistently delivering impactful results that drive growth and engagement. </p>
                     <a class="get_started text-white text-decoration-none" href="about.html">Get Started
                         <figure class="mb-0"><img src="assets/images/button-arrow.png" alt="" class="img-fluid"/></figure>
                     </a>
@@ -240,8 +244,7 @@ function Portfolio(){
                 <div class="blog_content" data-aos="fade-right">
                     <h6>News and articles</h6>
                     <h2>our latest blog posts</h2>
-                    <p>Grursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec
-                        odio aea the dumm recreo that dolocons.</p>
+                    <p>Check out our latest blog posts at Higgsera! Stay updated with trends in social media marketing, design, web and app development. </p>
                     <figure class="offer-circleimage mb-0">
                         <img src="assets/images/offer-circleimage.png" alt="" class="img-fluid"/>
                     </figure>

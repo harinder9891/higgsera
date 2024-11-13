@@ -1,8 +1,13 @@
-import React, {Fragment} from 'react';
+import React, {Fragment,useEffect} from 'react';
 import Header from './header';
 import Footer from './footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact(){
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return(
         <Fragment>
            
@@ -20,7 +25,7 @@ function Contact(){
                             <img src="assets/images/service-rightcircle.png" alt="" class="img-fluid"/>
                         </figure>
                         <h1 class="text-white">Contact Us</h1>
-                        <p>Eoidunt eget semper nec ruam sed hendrerit morbi ac feliseao augue pellentesue morbi acer.</p>
+                        <p>We’re always available to answer your questions or provide expert advice on how our services can benefit your brand.</p>
                         <div class="box">
                             <span class="mb-0">Home</span>
                             <figure class="mb-0 arrow"><img src="assets/images/button-arrow.png" alt="" class="img-fluid"/></figure>
@@ -87,7 +92,7 @@ function Contact(){
                                 <a class="text-decoration-none text" href="tel:+919056503603">+91 9056-503-603</a>                             
                             </p>
                             <p>
-                                <a class="mb-0 text-decoration-none text" href="tel:+919056503603">+91 9736-881-788</a>
+                                <a class="mb-0 text-decoration-none text" href="tel:+919056503603">+91 7657-863-249</a>
                             </p>
                         </div>
                     </div>

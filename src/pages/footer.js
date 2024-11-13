@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer(){
     return(
@@ -20,8 +21,7 @@ function Footer(){
                                 <img src="assets/images/logo-1.png" className="img-fluid" alt=""/>
                             </figure>
                         </a>
-                        <p className="text-size-18 footer-text">Grursus mal suada faci lisis lorem ipsum dolaror
-                            more ameion consectetur elit vesti at bulum ne odio aea the dumm ipsum dolocons.</p>
+                        <p className="text-size-18 footer-text">At HIGGSERA, we empower businesses to innovate boldly and lead with confidence.</p>
                         <div className="lower">
                             <div className="lower-content">
                                 <figure className="icon">
@@ -48,15 +48,17 @@ function Footer(){
                     <div className="links list-pd">
                         <h4 className="heading text-white">Quick Links</h4>
                         <ul className="list-unstyled mb-0">
-                            <li><a href="index.html" className="text-size-18 text text-decoration-none">Home</a></li>
-                            <li><a href="about.html" className="text-size-18 text text-decoration-none">About</a></li>
-                            <li><a href="service.html" className="text-size-18 text text-decoration-none">Services</a></li>
-                            <li><a href="contact.html" className="text-size-18 text text-decoration-none">Contact</a></li>
+                            <li>
+                            <Link className="text-size-18 text text-decoration-none" to="/">Home</Link>
+                               </li>
+                            <li><Link className="text-size-18 text text-decoration-none" to="/about-us">About</Link></li>
+                            <li><Link className="text-size-18 text text-decoration-none" to="/services">Services</Link></li>
+                            <li><Link className="text-size-18 text text-decoration-none" to="/contact-us">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 col-12 d-lg-block d-none">
-                    <div className="links"  style={{'text-align': 'left'}}>
+                    <div className="links"  style={{'textAlign': 'left'}}>
                         <h4 className="heading text-white">Our Services</h4>
                         <ul className="list-unstyled mb-0">
                             <li><a href="service.html" className="text-size-18 text text-decoration-none">Cloud Service</a></li>
@@ -69,7 +71,7 @@ function Footer(){
                     <div className="icons">
                         <h4 className="heading mb-0 text-white">Subscribe to</h4>
                         <h4 className="heading text-white">Our Newsletter Today!</h4>
-                        <p className="text-size-18 footer-text text-white">Exerci tation ullamcorper suscipit lobor nisl aliuie naro commodo.</p>
+                        <p className="text-size-18 footer-text text-white">subscribe today for updates, insights, and exclusive offers from Higgsera!.</p>
                         <form id="contactpage1" method="POST" action="https://html.designingmedia.com/technofy/contact-form.php">
                             <div className="form-group mb-0">
                                 <input type="text" className="form_style" placeholder="Enter Email Address:" name="email"/> 

@@ -1,12 +1,20 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './header';
 import Footer from './footer';
+import Testimonial from './testimonial';
+import Popup from './popup';
 function Index(){
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
     useEffect(() => {
         AOS.init();
     }, []);
+    const togglePopup = (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        setIsPopupOpen(!isPopupOpen); // Toggle the popup open/close state
+      };
+      
     return(
         <Fragment>
 <div className="banner_outer">
@@ -34,7 +42,7 @@ function Index(){
                         <a className="get_started button1 text-white text-decoration-none" href="contact.html">Get Started
                             <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                         </a>
-                        <a className="get_started button2 text-white text-decoration-none" href="contact.html">Contact Us
+                        <a className="get_started button2 text-white text-decoration-none" href="/contact-us">Contact Us
                             <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                         </a>
                         <figure className="banner-circleleft mb-0">
@@ -72,7 +80,8 @@ function Index(){
                 </div>
             </div>
         </div>
-    </section>
+    </section>   
+   
 </div>
 <section className="service-section">
     <figure className="service-leftlayer mb-0">
@@ -150,7 +159,7 @@ function Index(){
                         <li className="text"><i className="circle fa-duotone fa-check"></i>Innovative mobile solutions that enhance user experiences.</li>
                         <li className="text text1"><i className="circle fa-duotone fa-check"></i>Stunning visuals that capture your brand's essence.</li>
                     </ul>
-                    <a className="get_started text-white text-decoration-none" href="service.html">Get Started
+                    <a className="get_started text-white text-decoration-none" href="/services">Get Started
                         <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                     </a>
                 </div>
@@ -274,7 +283,7 @@ function Index(){
                     <h2 className="text-white">We help clients invent their future.</h2>
                     <p className="text1">We help clients shape their future with innovative solutions. Our expertise in digital marketing, web and app development, and graphic design enables businesses to embrace new technologies. </p>
                     <p className="text2">By partnering closely with our clients, we create tailored strategies that boost their online presence and unlock new opportunities for success.</p>
-                    <a className="read_more text-white text-decoration-none" href="about.html">Read More
+                    <a className="read_more text-white text-decoration-none" href="/about-us">Read More
                         <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                     </a>
                 </div>
@@ -301,9 +310,9 @@ function Index(){
                     </figure>
                     <h6>Achievements</h6>
                     <h2>Some Number of Our Achievements</h2>
-                    <p>Grursus mal suada faci lisis lorem ipsum dolarorit more
-                        ion consectetur elit vesti at bulum nec odio aea the au ipsumm recreo that dolocons.</p>
-                    <a className="get_started text-white text-decoration-none" href="about.html">Get Started
+                    <p>We’ve propelled brands to new heights through innovative digital solutions, 
+                        What Our Customers Have To Sayconsistently delivering impactful results that drive growth and engagement.</p>
+                    <a className="get_started text-white text-decoration-none" href="/about-us">Get Started
                         <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
                     </a>
                 </div>
@@ -360,360 +369,42 @@ function Index(){
         <img src="assets/images/service-rightlayer.png" alt="" className="img-fluid"/>
     </figure>
 </section>
-<section className="project-section">
-    <figure className="offer-toplayer mb-0">
-        <img src="assets/images/offer-toplayer.png" alt="" className="img-fluid"/>
-    </figure>
-    <div className="container-fluid">
-        <div className="row">
-            <div className="col-12">
-                <div className="project_content" data-aos="fade-right">
-                    <h6>RECENT Portfolio</h6>
-                    <h2>Our Latest Case Studies</h2>
-                    <p>Dursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec
-                        odio aea the dumm recreo that dolocons.</p>
-                    <figure className="offer-circleimage mb-0">
-                        <img src="assets/images/offer-circleimage.png" alt="" className="img-fluid"/>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div className="row">
-            <div className="owl-carousel owl-theme">
-                <div className="item">
-                    <div className="case-box1 case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image1.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Design</span>
-                            <h5 className="text-white">Business Analysis</h5>
-                            <p className="text-white text-size-18">Rerum hic tenetur sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image2.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Development</span>
-                            <h5 className="text-white">Web Development</h5>
-                            <p className="text-white text-size-18">Serum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box2 case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image3.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Marketing</span>
-                            <h5 className="text-white">Digital Marketing</h5>
-                            <p className="text-white text-size-18">Terum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image4.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Design</span>
-                            <h5 className="text-white">Tech Solutions</h5>
-                            <p className="text-white text-size-18">Uerum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image5.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Security</span>
-                            <h5 className="text-white">Cyber Security</h5>
-                            <p className="text-white text-size-18">Nerum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box1 case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image1.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Design</span>
-                            <h5 className="text-white">Business Analysis</h5>
-                            <p className="text-white text-size-18">Rerum hic tenetur sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image2.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Development</span>
-                            <h5 className="text-white">Web Development</h5>
-                            <p className="text-white text-size-18">Serum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box2 case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image3.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Marketing</span>
-                            <h5 className="text-white">Digital Marketing</h5>
-                            <p className="text-white text-size-18">Terum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image4.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Design</span>
-                            <h5 className="text-white">Tech Solutions</h5>
-                            <p className="text-white text-size-18">Uerum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image5.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Security</span>
-                            <h5 className="text-white">Cyber Security</h5>
-                            <p className="text-white text-size-18">Nerum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box1 case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image1.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Design</span>
-                            <h5 className="text-white">Business Analysis</h5>
-                            <p className="text-white text-size-18">Rerum hic tenetur sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image2.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Development</span>
-                            <h5 className="text-white">Web Development</h5>
-                            <p className="text-white text-size-18">Serum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box2 case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image3.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Marketing</span>
-                            <h5 className="text-white">Digital Marketing</h5>
-                            <p className="text-white text-size-18">Terum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image4.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Design</span>
-                            <h5 className="text-white">Tech Solutions</h5>
-                            <p className="text-white text-size-18">Uerum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="case-box overlay">
-                        <div className="overlay-image">
-                            <figure className="image mb-0">
-                                <img src="assets/images/case-image5.jpg" alt="" className=""/>
-                            </figure>
-                        </div>
-                        <div className="content">
-                            <span className="text-white">Security</span>
-                            <h5 className="text-white">Cyber Security</h5>
-                            <p className="text-white text-size-18">Nerum hic tenetur a sapiente...</p>
-                            <i className="circle fa-thin fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <figure className="offer-bottomlayer mb-0">
-        <img src="assets/images/offer-bottomlayer.png" alt="" className="img-fluid"/>
-    </figure>
-</section>
-<section className="testimonial-section position-relative">
-    <figure className="service-leftlayer mb-0">
-        <img src="assets/images/service-leftlayer.png" alt="" className="img-fluid"/>
+<section className="consultation-section">
+<figure className="consultation-leftimage mb-0">
+        <img src="assets/images/service-consultationleftimage.png" alt="" className="img-fluid"/>
     </figure>
     <div className="container">
+    {isPopupOpen && (
+          <Popup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+        )}
         <div className="row">
-            <div className="col-lg-5 col-md-12 col-sm-12 col-12">
-                <div className="testimonial_wrapper position-relative" data-aos="fade-right">
-                    <figure className="service-rightcircle mb-0">
-                        <img src="assets/images/service-rightcircle.png" alt="" className="img-fluid"/>
-                    </figure>
-                    <div className="circle_wrapper position-relative">
-                        <div className="center-circle">
-                            <figure className="testimonial-centerimage mb-0">
-                                <img src="assets/images/testimonial-centerimage.png" alt="" className="img-fluid"/>
-                            </figure>
-                        </div>
-                        <figure className="testimonial-image1 position-absolute mb-0">
-                            <img src="assets/images/testimonial-image1.png" alt="" className="img-fluid"/>
-                        </figure>
-                        <figure className="testimonial-image2 position-absolute mb-0">
-                            <img src="assets/images/testimonial-image2.png" alt="" className="img-fluid"/>
-                        </figure>
-                        <figure className="testimonial-image3 position-absolute mb-0">
-                            <img src="assets/images/testimonial-image3.png" alt="" className="img-fluid"/>
-                        </figure>
-                        <figure className="testimonial-image4 position-absolute mb-0">
-                            <img src="assets/images/testimonial-image4.png" alt="" className="img-fluid"/>
-                        </figure>
-                    </div>
+            <div className="col-lg-7 col-md-7 col-sm-12 col-12">
+                <div className="consultation_content aos-init aos-animate" data-aos="fade-right">
+                    <h6>WE ARE HERE TO guide you</h6>
+                    <h2 className="text-white">NEED A CONSULTATION?</h2>
+                    <p className="mb-0">Have questions or ready to elevate your brand? We're here to help! Reach out to Higgsera for expert solutions in social media marketing, web design, and development.</p>
                 </div>
             </div>
-            <div className="col-lg-7 col-md-12 col-sm-12 col-12">
-                <div className="testimonial_contentwrapper">
-                    <div className="heading">
-                        <h6>TESTIMONIALS</h6>
-                        <h2>What Our Customers Have To Say</h2>
-                    </div>
-                    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <div className="testimonial_content">
-                                    <div className="content-box">
-                                        <p>Nemo enim ipsam voluptatem quia voluptas sit asperna aut odit aut 
-                                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
-                                            sequi nesciuntporro quisuam est, rui dolorem ipsum quia dolor sit amet, 
-                                            consectetur adieisci velit sed ruia.</p>
-                                        <div className="content">
-                                            <div className="circle">
-                                                <figure className="testimonial-quote mb-0">
-                                                    <img src="assets/images/testimonial-quote.png" alt="" className="img-fluid"/>
-                                                </figure>
-                                            </div>
-                                            <div className="designation-outer">
-                                                <span>Kevin James</span>
-                                                <p className="text-size-18 mb-0">Happy Client</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <div className="testimonial_content">
-                                    <div className="content-box">
-                                        <p>Nemo enim ipsam voluptatem quia voluptas sit asperna aut odit aut 
-                                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
-                                            sequi nesciuntporro quisuam est, rui dolorem ipsum quia dolor sit amet, 
-                                            consectetur adieisci velit sed ruia.</p>
-                                        <div className="content">
-                                            <div className="circle">
-                                                <figure className="testimonial-quote mb-0">
-                                                    <img src="assets/images/testimonial-quote.png" alt="" className="img-fluid"/>
-                                                </figure>
-                                            </div>
-                                            <div className="designation-outer">
-                                                <span>Kevin James</span>
-                                                <p className="text-size-18 mb-0">Happy Client</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pagination-outer">
-                            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <i className="fa-solid fa-arrow-left"></i>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <i className="fa-solid fa-arrow-right-long"></i>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
+            <div className="col-lg-5 col-md-5 col-sm-12 col-12">
+                <div className="consultation_wrapper">
+                    <figure className="service-rightcircle mb-0">
+                        <img src="assets/images/about-rightcircle.png" alt="" className="img-fluid"/>
+                    </figure>
+                    <a className="get_started button1 text-white text-decoration-none" onClick={togglePopup} href="#">Get a Quote
+                        <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
+                    </a>
+                    
+                    <a className="get_started button2 text-white text-decoration-none" href="/contact-us">Contact Us
+                        <figure className="mb-0"><img src="assets/images/button-arrow.png" alt="" className="img-fluid"/></figure>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <figure className="service-rightlayer mb-0">
-        <img src="assets/images/service-rightlayer.png" alt="" className="img-fluid"/>
-    </figure>
+   
+
 </section>
+<Testimonial/>
 <section className="blog-section">
     <figure className="offer-toplayer mb-0">
         <img src="assets/images/offer-toplayer.png" alt="" className="img-fluid"/>
@@ -724,8 +415,7 @@ function Index(){
                 <div className="blog_content" data-aos="fade-right">
                     <h6>News and articles</h6>
                     <h2>our latest blog posts</h2>
-                    <p>Grursus mal suada faci lisis lorem ipsum dolarorit more ame ion consectetur elit vesti at bulum nec
-                        odio aea the dumm recreo that dolocons.</p>
+                    <p>Check out our latest blog posts at Higgsera! Stay updated with trends in social media marketing, design, web and app development. </p>
                     <figure className="offer-circleimage mb-0">
                         <img src="assets/images/offer-circleimage.png" alt="" className="img-fluid"/>
                     </figure>
